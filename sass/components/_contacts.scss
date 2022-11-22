@@ -6,11 +6,11 @@
 }
 
 .contacts__item {
-    color:  rgba(255, 255, 255, 0.6);
-    font-weight: 400;
+    color:  $primary-text-color;
+    font-weight: 500;
     font-size: 14px;
    font-style: normal;
-    line-height: 1.71;
+    line-height: 1.1;
     letter-spacing: 0.02em;
 text-decoration: none;
     transition: color 250ms $time-distribution-function;
