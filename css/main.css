@@ -1,7 +1,7 @@
 .cardset, .filter, .footer__list, .footer__navigation, .clients-list, .socials, .team-socials, .team-list__card, .advantage-list, .contacts, .navigation {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 .portfolio-content__title, .advantage__title {
@@ -291,11 +291,11 @@ body {
 }
 
 .contacts__item {
-  color: #757575;
-  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
   font-size: 14px;
   font-style: normal;
-  line-height: 1.1;
+  line-height: 1.71;
   letter-spacing: 0.02em;
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -440,6 +440,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -495,6 +496,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
