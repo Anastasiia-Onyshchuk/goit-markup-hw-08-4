@@ -1,0 +1,22 @@
+.portfolio-content{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.filter{
+    display: flex;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    @extend %list
+}
+
+.filter__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-content__title{
+@extend %visually-hidden
+}

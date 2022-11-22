@@ -1,0 +1,22 @@
+.header {
+    margin-top: 0;
+    border-bottom: 1px solid #ECECEC;
+}
+.header__container {
+    display: flex;
+    margin-top: 0;
+    height: 80px;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+    flex-grow: 1;
+    gap: 93px;
+}

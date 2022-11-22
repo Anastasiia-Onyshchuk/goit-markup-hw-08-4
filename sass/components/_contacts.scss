@@ -1,0 +1,57 @@
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @extend %list
+}
+
+.contacts__item {
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+   font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+text-decoration: none;
+    transition: color 250ms $time-distribution-function;
+
+    &:hover,
+    &:focus {
+            color: $hover-color;
+        }
+
+}
+
+
+
+.contacts__item:hover .smartphone {
+    fill: $hover-color;
+}
+
+.contacts__item:focus .smartphone {
+    fill: $hover-color;
+}
+
+
+.envelope {
+    margin-right: 10px;
+    fill: $primary-text-color;
+
+    transition: fill 250ms $time-distribution-function;
+    .contacts:hover & {
+            fill: $hover-color;
+        }
+    
+        .contacts:focus & {
+            fill: $hover-color;
+        }
+}
+
+
+
+.smartphone {
+    margin-right: 10px;
+    fill: $primary-text-color;
+    transition: fill 250ms $time-distribution-function;
+
+}

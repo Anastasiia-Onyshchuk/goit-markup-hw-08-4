@@ -1,0 +1,52 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+        @extend %list
+}
+
+.clients-list__item {
+    width: calc((100% - 150px)/6);
+
+}
+
+.clients-list__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icons-color;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    fill: $icons-color;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: $time-distribution-function;
+
+    &:hover,
+    &:focus {
+            border: 1px solid $hover-color;
+        }
+}
+
+.clients-list__icon {
+    fill: #AFB1B8;
+    transition: fill 5050ms $time-distribution-function;
+
+    .clients-list__link:hover & {
+            fill: $hover-color;
+        }
+    
+        .clients-list__link:focus & {
+            fill: $hover-color;
+        }
+}
