@@ -2,8 +2,9 @@
     margin-top: 0;
     border-bottom: 1px solid #ECECEC;
     background-color: $secondary-bcg-color;
-
-    @media screen and (min-width: 768px){
+}
+@media (min-width: 768px){
+    .header{
         background-color: red;
     }
 }
