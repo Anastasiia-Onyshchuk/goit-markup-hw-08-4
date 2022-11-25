@@ -100,12 +100,28 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 480px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+  }
+}
 .title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -210,6 +226,12 @@ body {
 .header {
   margin-top: 0;
   border-bottom: 1px solid #ECECEC;
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: aqua;
+  }
 }
 
 .header__container {

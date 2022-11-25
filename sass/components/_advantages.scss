@@ -13,8 +13,11 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+     
     @extend %list
 }
+
+
 .advantage-list__item {
     width: 270px;
     margin-left: 0;
