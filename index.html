@@ -166,7 +166,19 @@
             <h2 class="title">Наша команда</h2>
             <ul class="team-list list">
                 <li class="team-list__card">
-                    <img class="team-list__image" src="./images/1.jpg" alt="Усміхнений чоловік в окулярах" width="270">
+                    <!-- <picture>
+                        <source srcset="./images/./images/team-img.jpg 1x">
+                    </picture> -->
+                    <img class="team-list__image" 
+                    srcset="
+                    ./images/team-img.jpg 450w,
+                    ./images/team-img@2x.jpg 900w
+                    " 
+                    src="./images/team-img.jpg" 
+                    alt="Усміхнений чоловік в окулярах" width="270"
+                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                   >
+                    
                     <div class="team-list__info">
                         <h3 class="team-list__title">Ігор Дем'яненко</h3>
                         <p lang="en" class="team-list__text">Product Designer</p>
@@ -199,7 +211,16 @@
                     </div>
                 </li>
                 <li class="team-list__card">
-                    <img class="team-list__image" src="./images/2.jpg" alt="Усміхнена жінка в окулярах" width="270">
+                    <img 
+                    srcset="
+                    ./images/team-img2.jpg 450w,
+                    ./images/team-img2@2x.jpg 900w
+                    "
+                     class="team-list__image" 
+                     src="./images/team-img2.jpg" 
+                     alt="Усміхнена жінка в окулярах" 
+                     width="270"
+                     sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
                     <div class="team-list__info">
                         <h3 class="team-list__title">Ольга Рєпіна</h3>
                         <p lang="en" class="team-list__text">Frontend Developer</p>
@@ -232,7 +253,16 @@
                     </div>
                 </li>
                 <li class="team-list__card">
-                    <img class="team-list__image" src="./images/3.jpg" alt="Усміхнений чоловік дивиться праворуч" width="270">
+                    <img 
+                    srcset="
+                    ./images/team-img3.jpg 450w,
+                    ./images/team-img3@2x.jpg 900w
+                    "
+                     class="team-list__image" 
+                     src="./images/team-img2.jpg" 
+                     alt="Усміхнений чоловік дивиться 
+                     праворуч"  width="270"
+                     sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"idth="270">
                     <div class="team-list__info">
                         <h3 class="team-list__title">Микола Тарасов</h3>
                         <p lang="en" class="team-list__text">Marketing</p>
@@ -265,7 +295,16 @@
                     </div>
                 </li>
                 <li class="team-list__card">
-                    <img class="team-list__image" src="./images/4.jpg" alt="Чоловік в окулярах з легкою посмішкою на обличчі" width="270">
+                    <img 
+                    srcset="
+                    ./images/team-img4.jpg 450w,
+                    ./images/team-img4@2x.jpg 900w
+                    "
+                     class="team-list__image" 
+                     src="./images/team-img2.jpg" 
+                     alt="Чоловік в окулярах з легкою 
+                     посмішкою"  width="270"
+                     sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"а обличчі" width="270">
                     <div class="team-list__info">
                         <h3 class="team-list__title">Михайло Єрмаков</h3>
                         <p lang="en" class="team-list__text">UI Designer</p>

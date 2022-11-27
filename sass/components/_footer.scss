@@ -17,14 +17,19 @@ text-decoration: none;
 }
 
 .footer__container {
+    
+    @media screen and (min-width: $breakpoint-tablet) {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
 }
+}
+
 
 .footer__navigation {
     margin-right: 70px;
         @extend %list
+        
 }
 
 .footer__logo {
@@ -53,10 +58,15 @@ text-decoration: none;
 .footer__nav {
     margin-top: 0;
 
+
    &:not(:last-child) {
             margin-bottom: 9px;
             white-space: nowrap;
         }
+        @media  screen and (max-width: $breakpoint-mobile) {
+            justify-content: center;
+        }
+
 }
 
 .footer__map {
@@ -71,6 +81,7 @@ text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: $time-distribution-function;
+    text-align: center;
 
    &:hover,
    &:focus {
@@ -81,15 +92,25 @@ text-decoration: none;
 
 .footer-socials__action-text{
     margin-bottom: 20px;
+    @media screen and (max-width: $breakpoint-mobile){
+        text-align: center;
+    }
 }
 
 .footer-form {
     padding-left: 93px;
+        @media screen and (max-width: 1199px) {
+            padding-left: 0;
+    }
 }
 
 .form-container {
-    display: flex;
-    gap: 12px;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        display: flex;
+        gap: 12px;
+    }
+
 }
 
 .form-container__input {
@@ -100,12 +121,16 @@ text-decoration: none;
     padding: 15px 16px;
     width: 358px;
 
+    @media screen and (max-width: 1199px){
+width: 100%;
+        }
     & ::placeholder {
             color: var(--placeholder-color);
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
         }
+
 }
 
 
@@ -125,5 +150,11 @@ text-decoration: none;
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
-    color: var(--secondary-bcg-color);
+    color: $hover-color;
+
+    @media screen and (max-width: 1199px){
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
