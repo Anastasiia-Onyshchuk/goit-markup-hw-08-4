@@ -1,7 +1,13 @@
 .contacts {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    display: block;
+   padding: 0;
+   margin: 0;
+
+    @media screen and (min-width: $breakpoint-desktop){
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
     @extend %list
 }
 
@@ -15,6 +21,13 @@
 text-decoration: none;
     transition: color 250ms $time-distribution-function;
 
+    @media screen and (max-width: 767px){
+        font-size: 34px;
+        line-height: 1.16;
+        justify-content: left;
+        margin-bottom: 10px;
+    }
+
     &:hover,
     &:focus {
             color: $hover-color;
@@ -22,7 +35,11 @@ text-decoration: none;
 
 }
 
-
+@media screen and (max-width: 767px){
+    .contacts__item :last-child{
+       margin-bottom: 0;
+    }
+}
 
 .contacts__item:hover .smartphone {
     fill: $hover-color;
@@ -31,6 +48,7 @@ text-decoration: none;
 .contacts__item:focus .smartphone {
     fill: $hover-color;
 }
+
 
 
 .envelope {
@@ -45,6 +63,9 @@ text-decoration: none;
         .contacts:focus & {
             fill: $hover-color;
         }
+        @media screen and (max-width: 767px){
+           display: none;
+        }
 }
 
 
@@ -53,5 +74,7 @@ text-decoration: none;
     margin-right: 10px;
     fill: $primary-text-color;
     transition: fill 250ms $time-distribution-function;
-
+    @media screen and (max-width: 767px){
+        display: none;
+     }
 }

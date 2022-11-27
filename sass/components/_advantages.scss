@@ -8,41 +8,81 @@
     }
 }
 .advantage-list {
-   display: flex;
     margin-top: 0;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+// margin-left: 15px;
+// margin-right: 15px;
+// padding-right: 0px;
+// padding-left: 0px;
 
-
+@media screen and (min-width: $breakpoint-tablet){
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: $breakpoint-desktop){
+    flex-wrap: nowrap;
+}
     @extend %list
 }
 
 
 .advantage-list__item {
-    width: 270px;
-    margin-left: 0;
-    margin-right: auto;
-    margin-right: 30px;
-    
+    width: calc((100% - 0px) / 1);
+    margin-left: -15px;
+    margin-bottom: 30px;
+
     &:last-child {
             margin-right: 0;
-        }
+            margin-bottom: 0px;
+
 }
+}
+@media screen and (min-width: $breakpoint-tablet) {
+    .advantage-list__item{
+        width: calc((100% - 60px) / 2);
+        margin-right: 30px;
+       
+    }
+    .advantage-list__item:last-child{
+        margin-right: 0px;
+    }
+}
+@media screen and (min-width: $breakpoint-desktop) {
+    .advantage-list__item{
+        width: calc((100% - 90px) / 4);
+        margin-bottom: 0px;
+    }
+   
+}
+// // @media screen and (max-width: $breakpoint-tablet){
+// //     .advantage-list__item :not(:last-child){
+// //         margin-bottom: 20px;
+// //     }
+// }
 
 .advantage-list__card {
     background-color: $primary-bcg-color;
     display: flex;
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     justify-content: center;
     align-items: center;
     margin-top: 0;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        width: 354px; 
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: 270px; 
+    }
 }
 .advantage__title{
-    @extend %visually-hidden
+
+    @extend %visually-hidden  
 }
 .advantage-list__title {
     margin-top: 0;
@@ -53,11 +93,15 @@
     letter-spacing: 0.03em;
     color: $secondary-text-color;
     text-transform: uppercase;
-
+    text-align: center;
+    @media screen and (min-width: $breakpoint-tablet){
+        text-align: left;
+    }
    
 }
 
 .advantage-list__text {
     margin-top: 0;
     margin-bottom: 0;
+    width: 100%;
 }

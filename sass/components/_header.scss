@@ -1,15 +1,17 @@
 .header {
     margin-top: 0;
+    position: relative;
     border-bottom: 1px solid #ECECEC;
     background-color: $secondary-bcg-color;
-    
-    @media screen and (min-width: 768px){
-        background-color: aqua;
-    }
+
+    // @media screen and (min-width: $breakpoint-tablet){
+    //     background-color: aqua;
+    // }
 }
 
 
 .header__container {
+    
     display: flex;
     margin-top: 0;
     height: 80px;
@@ -18,10 +20,15 @@
     padding-top: 24px;
     padding-bottom: 25px;
     justify-content: space-between;
+
+@media screen and(max-width: $breakpoint-mobile){
+    height: 60px;
+}
 }
 
 .header__nav {
     display: flex;
+
     margin-top: 0;
     align-items: center;
     flex-grow: 1;

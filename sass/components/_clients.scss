@@ -9,14 +9,40 @@
 }
 
 .clients-list {
-    display: flex;
-    gap: 30px;
+
+    // display: block;
+    // flex-wrap: wrap;
+
+    // @media screen and (min-width: $breakpoint-desktop){
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        margin-right: -15px;
+
+     
+    // }
+// &:not(:nth-child(3n)){
+// margin-right: 0;
+// }
+
         @extend %list
 }
 
 .clients-list__item {
-    width: calc((100% - 150px)/6);
+        width: calc((100% - 30px) / 2);
+        height: 92px;
+        margin-bottom: 30px;
+        margin-right: 0;
 
+        @media screen and (min-width: $breakpoint-tablet) {
+            width: calc((100% - 60px) / 3);
+        }
+        @media screen and (min-width: $breakpoint-desktop){
+            width: calc((100% - 150px) / 6);
+        }
 }
 
 .clients-list__link {

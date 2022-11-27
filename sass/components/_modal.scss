@@ -23,12 +23,12 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: $time-distribution-function;
-
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
 }
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
-}
+
 .modal__title {
     margin-top: 0;
     margin-bottom: 12px;
