@@ -2,8 +2,11 @@
     background-color: $secondary-bcg-color;
     min-height: 796px;
     width: 100%;
-    padding: 48px 40px;
-    
+    // padding: 48px 40px;
+    padding-top: 55px;
+padding-right: 30px;
+padding-bottom: 55px;
+padding-left: 30px;
 
    &.is-open{
     display: block;
@@ -21,30 +24,3 @@
     background-color: transparent;
    }
 }
-
-// .menu__list{
-//         display: flex;
-//         padding: 0;
-//         margin: 0;
-//         list-style: none;
-
-      
-// @media (max-width: 767px) {
-//           display: block;
-//         }
-//     @extend %list
-// }
-// .menu__link{
-//     color: red;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.1;
-//     letter-spacing: 0.02em;
-//     text-decoration: none;
-//     transition: color 250ms $time-distribution-function;
-
-//   &:hover,
-//   &:focus {
-//             color: $hover-color;
-//         }                   
-// }

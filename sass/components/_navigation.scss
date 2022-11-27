@@ -56,7 +56,20 @@
             padding: 0;
     
         }
+
+ 
 }
+@media screen and (max-width: 767px){
+    .navigation__link.current{
+        color: $hover-color;
+    }
+}
+// @media screen and (max-width: 767px){
+// //     .navigation__link.current-link{
+// //         display: none;
+// // }
+// // }    
+
 @media screen and (max-width: 767px){
  .navigation__link :last-child{
     margin-bottom: 306px;

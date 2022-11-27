@@ -81,12 +81,14 @@ margin-right: auto;
     justify-content: center;
     gap: 10px;
 
+
     // @media screen and (min-width: $breakpoint-tablet) and (max-width: 1199px){
     //     object-position: contain;
     // }
         @extend %list
 }
 .team-socials__link {
+
     display: flex;
     align-items: center;
     justify-content: center;

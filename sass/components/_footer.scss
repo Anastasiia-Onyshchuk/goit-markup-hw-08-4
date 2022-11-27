@@ -1,7 +1,19 @@
+.footer__container {
+        
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: $breakpoint-desktop) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+}
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
+
 
 .contacts__item{
         color: rgba(255, 255, 255, 0.6);;
@@ -15,19 +27,19 @@ text-decoration: none;
 
     }
 }
+.footer-socials{
+    margin-bottom: 60px;
+}
 
-.footer__container {
-    
-    @media screen and (min-width: $breakpoint-tablet) {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-}
+
 
 
 .footer__navigation {
-    margin-right: 70px;
+    margin-bottom: 60px;
+    @media screen and (min-width: $breakpoint-tablet){
+        margin-right: 70px;
+        margin-bottom: 0;  
+    }
         @extend %list
         
 }
@@ -40,6 +52,11 @@ text-decoration: none;
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+ 
+    }
 }
 
 .footer__logo-part {
@@ -102,10 +119,11 @@ text-decoration: none;
         @media screen and (max-width: 1199px) {
             padding-left: 0;
     }
+
 }
 
 .form-container {
-
+display: block;
     @media screen and (min-width: $breakpoint-desktop) {
         display: flex;
         gap: 12px;
@@ -123,6 +141,7 @@ text-decoration: none;
 
     @media screen and (max-width: 1199px){
 width: 100%;
+margin-bottom: 20px;
         }
     & ::placeholder {
             color: var(--placeholder-color);
