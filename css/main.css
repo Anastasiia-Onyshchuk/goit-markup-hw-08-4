@@ -478,12 +478,6 @@ img {
   display: block;
   padding: 0;
 }
-@media screen and (max-width: 767px) {
-  .contacts {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
 @media screen and (min-width: 1200px) {
   .contacts {
     display: -webkit-box;
@@ -547,11 +541,6 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts__item:first-child {
     margin-right: 30px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .contacts__item .menu {
-    display: none;
   }
 }
 .contacts__item:hover .smartphone {
