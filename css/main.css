@@ -492,7 +492,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 50px;
   }
 }
 
@@ -545,6 +544,11 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts__item:first-child {
+    margin-right: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .contacts__item .menu {
     display: none;
@@ -672,8 +676,8 @@ img {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header-img.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-img.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/header-img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-img.jpg");
     max-width: 480px;
   }
 }

@@ -9,7 +9,7 @@ display: block;
     @media screen and (min-width: $breakpoint-desktop){
         display: flex;
         align-items: center;
-        gap: 50px;
+        // gap: 50px;
     }
     
         @extend %list
@@ -50,6 +50,12 @@ text-decoration: none;
         @media screen and (min-width: $breakpoint-desktop) {
             display: flex;
         }
+
+}
+@media screen and (min-width: $breakpoint-desktop){
+    .contacts__item:first-child{
+margin-right: 30px;
+    }
 
 }
 @media screen and (max-width: 767px){
