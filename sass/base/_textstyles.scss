@@ -26,4 +26,8 @@
     @media screen and (max-width: 1199px) {
         text-align: center;
     }
+
+    @media screen and (min-width: $breakpoint-desktop){
+        text-align: left;
+    }
 }

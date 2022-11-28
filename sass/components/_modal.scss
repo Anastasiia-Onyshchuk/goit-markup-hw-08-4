@@ -10,12 +10,14 @@
 }
 
 .modal {
-    position: absolute;
-    min-width: 528px;
-    min-height: 581px;
-    padding: 40px;
+
+    max-width: 450px;
+    // min-height: 581px;
+    width: calc(100% - 30px);
     top: 50%;
     left: 50%;
+    position: absolute;
+    padding: 40px;
     border-radius: 4px;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
@@ -25,6 +27,18 @@
     transition-timing-function: $time-distribution-function;
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    @media screen and (min-width: $breakpoint-tablet){
+        // min-width: 528px;
+        // min-height: 581px;
+        top: 50%;
+        left: 50%;
+        width: calc(100% - 318px);
+    }
+    @media screen and (min-width:$breakpoint-desktop){
+        min-width: 528px;
+        min-height: 581px;
     }
 }
 

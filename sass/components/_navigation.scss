@@ -1,13 +1,28 @@
 .navigation {
-    display: flex;
-    margin-top: 0;
-    align-items: center;
+    // display: flex;
+    // margin-top: 0;
+    // align-items: center;
     flex-grow: 1;
-    gap: 93px;
+    // gap: 93px;
+    display: flex;
+flex-wrap: nowrap;
+gap: 50px;
 
     @media screen and (max-width: 767px){
         display: block;
 }
+
+@media screen and (min-width:$breakpoint-tablet){
+    display: flex;
+    flex-wrap: nowrap;
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-left: auto;
+}
+// @media screen and (min-width:$breakpoint-desktop){
+//     gap: 50px;
+// }
 @extend %list;
 }
 .navigation__item {

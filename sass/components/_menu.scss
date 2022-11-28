@@ -24,3 +24,10 @@ padding-left: 30px;
     background-color: transparent;
    }
 }
+
+
+@media screen and (min-width: $breakpoint-tablet){
+.menu__container, .navigation, .contacts{
+    display: none;
+}
+   }

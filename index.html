@@ -23,6 +23,32 @@
             <div class="header__container">
                 <nav class="header__nav">
                     <a href="#" class="logo">Web<span class="logo__part">Studio</span></a>
+                    <ul class="navigation">
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link current-link current ">Студія</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Контакти </a>
+                        </li>
+                    </ul>
+                    <ul class="contacts list">
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="contacts__item ">
+                                <svg class="envelope" width="16px" height="12px">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+380961111111" class="contacts__item">
+                                <svg class="smartphone" width="10px" height="16px">
+                                    <use href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11</a></li>
+                    </ul>
                     <button type="button" 
                     class="menu-button" 
                     aria-expanded="false"
@@ -50,14 +76,14 @@
                             </li>
                         </ul>
                         <ul class="contacts list">
-                            <li><a href="mailto:info@devstudio.com" class="contacts__item ">
+                            <li><a href="mailto:info@devstudio.com" class="contacts__item menu">
                                     <svg class="envelope" width="16px" height="12px">
                                         <use href="./images/icons.svg#icon-envelope"></use>
                                     </svg>
                                     info@devstudio.com</a>
                             </li>
                             <li>
-                                <a href="tel:+380961111111" class="contacts__item">
+                                <a href="tel:+380961111111" class="contacts__item menu">
                                     <svg class="smartphone" width="10px" height="16px">
                                         <use href="./images/icons.svg#icon-smartphone"></use>
                                     </svg>
@@ -183,19 +209,20 @@
             <h2 class="title">Наша команда</h2>
             <ul class="team-list list">
                 <li class="team-list__card">
-                    <!-- <picture>
-                        <source srcset="./images/./images/team-img.jpg 1x">
-                    </picture> -->
-                    <img class="team-list__image" 
-                    srcset="
-                    ./images/team-img.jpg 450w,
-                    ./images/team-img@2x.jpg 900w
-                    " 
-                    src="./images/team-img.jpg" 
-                    alt="Усміхнений чоловік в окулярах" width="270"
-                    sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-                   >
-                    
+
+                    <picture>
+                        <source srcset="./images/team-img-mobile.jpg 1x, ./images/team-img-mobile@2x.jpg 2x"
+                        media="max-width: 767px">
+                        <source srcset="./images/team-img-tablet.jpg 1x, ./images/team-img-tablet@2.jpg 2x"
+                        media="min-width: 768px, max-width: 1199px">
+                        <sourse srcset="./images/team-img-desktop.jpg 1x, ./images/team-img-desktop@2.jpg 2x"
+                        media="min-width: 1200px">
+                        <img class="team-list__image" 
+                        src="./images/team-img-mobile.jpg" 
+                        alt="Усміхнений чоловік в окулярах" 
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                       >
+                    </picture>
                     <div class="team-list__info">
                         <h3 class="team-list__title">Ігор Дем'яненко</h3>
                         <p lang="en" class="team-list__text">Product Designer</p>
@@ -228,16 +255,19 @@
                     </div>
                 </li>
                 <li class="team-list__card">
-                    <img 
-                    srcset="
-                    ./images/team-img2.jpg 450w,
-                    ./images/team-img2@2x.jpg 900w
-                    "
-                     class="team-list__image" 
-                     src="./images/team-img2.jpg" 
-                     alt="Усміхнена жінка в окулярах" 
-                     width="270"
-                     sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
+                    <picture>
+                        <source srcset="./images/team-img2-mobile.jpg 1x, ./images/team-img2-mobile@2x.jpg 2x"
+                        media="max-width: 767px">
+                        <source srcset="./images/team-img2-tablet.jpg 1x, ./images/team-img2-tablet@2.jpg 2x"
+                        media="min-width: 768px, max-width: 1199px">
+                        <sourse srcset="./images/team-img2-desktop.jpg 1x, ./images/team-img2-desktop@2.jpg 2x"
+                        media="min-width: 1200px">
+                        <img class="team-list__image" 
+                        src="./images/team-img2-mobile.jpg" 
+                        alt="Усміхнена жінка в окулярах" 
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                       >
+                    </picture>
                     <div class="team-list__info">
                         <h3 class="team-list__title">Ольга Рєпіна</h3>
                         <p lang="en" class="team-list__text">Frontend Developer</p>
@@ -270,16 +300,19 @@
                     </div>
                 </li>
                 <li class="team-list__card">
-                    <img 
-                    srcset="
-                    ./images/team-img3.jpg 450w,
-                    ./images/team-img3@2x.jpg 900w
-                    "
-                     class="team-list__image" 
-                     src="./images/team-img2.jpg" 
-                     alt="Усміхнений чоловік дивиться 
-                     праворуч"  width="270"
-                     sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"idth="270">
+                    <picture>
+                        <source srcset="./images/team-img3-mobile.jpg 1x, ./images/team-img3-mobile@2x.jpg 2x"
+                        media="max-width: 767px">
+                        <source srcset="./images/team-img3-tablet.jpg 1x, ./images/team-img3-tablet@2.jpg 2x"
+                        media="min-width: 768px, max-width: 1199px">
+                        <sourse srcset="./images/team-img3-desktop.jpg 1x, ./images/team-img3-desktop@2.jpg 2x"
+                        media="min-width: 1200px">
+                        <img class="team-list__image" 
+                        src="./images/team-img3-mobile.jpg" 
+                        alt="Усміхнений чоловік в окулярах" 
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                       >
+                    </picture>
                     <div class="team-list__info">
                         <h3 class="team-list__title">Микола Тарасов</h3>
                         <p lang="en" class="team-list__text">Marketing</p>
@@ -310,18 +343,21 @@
                                 </a></li>
                         </ul>
                     </div>
+                    </div>
                 </li>
                 <li class="team-list__card">
-                    <img 
-                    srcset="
-                    ./images/team-img4.jpg 450w,
-                    ./images/team-img4@2x.jpg 900w
-                    "
-                     class="team-list__image" 
-                     src="./images/team-img2.jpg" 
-                     alt="Чоловік в окулярах з легкою 
-                     посмішкою"  width="270"
-                     sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"а обличчі" width="270">
+                    <picture>
+                        <source srcset="./images/team-img4-mobile 1x, ./images/team-img4-mobile@2.jpg 2x"
+                        media="max-width: 767px">
+                        <source srcset="./images/team-img4-tablet.jpg 1x, ./images/team-img4-tablet@2.jpg 2x"
+                        media="min-width: 768px, max-width: 1199px">
+                        <sourse srcset="./images/team-img4-desktop.jpg 1x, ./images/team-img4-desktop@2.jpg 2x"
+                        media="min-width: 1200px">
+                        <img class="team-list__image" 
+                        src="./images/team-img4-mobile.jpg" 
+                        alt="Усміхнений чоловік в окулярах" 
+                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
+                    </picture>
                     <div class="team-list__info">
                         <h3 class="team-list__title">Михайло Єрмаков</h3>
                         <p lang="en" class="team-list__text">UI Designer</p>
@@ -446,10 +482,10 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> 
             <div class="footer-form">
                 <p class="footer-socials__action-text action-text">Підпишіться на розсилку</p>
-                <form class="form-container">
+                <form class="form-container container">
                     <label for="form-container__email" class="form-container__label"></label>
                     <input type="email" class="form-container__input" id="footer-form-email" placeholder="E-mail"
                         width="358px" height="50px">
@@ -458,8 +494,8 @@
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
+                </form>
             </div>
-            </form>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>

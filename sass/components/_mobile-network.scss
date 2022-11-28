@@ -1,6 +1,6 @@
 .mobile-network {
-    display:flex
-
+    display: flex;
+    padding: 0;
 }
 @media screen and (min-width: $breakpoint-tablet) {
     .mobile-network{
@@ -22,12 +22,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 400;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.222;
     letter-spacing: .02em;
     text-align: start;
     text-transform: none;
     color:$hover-color;
+    margin-top: 63px;
 }
 
 .mobile-network__link:hover, .mobile-network__link:focus {
@@ -53,4 +54,5 @@
     border-color: rgba(33, 33, 33, .2);
     border-radius: 0;
     transform: rotate(90deg);
+    margin-top: 63px;
 }

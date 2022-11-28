@@ -33,4 +33,10 @@
     align-items: center;
     flex-grow: 1;
     gap: 93px;
+
+    @media screen and (min-width:$breakpoint-tablet ){
+    display: flex;
+justify-content: center;
+align-items: center;
+    }
 }

@@ -1,15 +1,17 @@
 .contacts {
-    display: block;
+display: block;
    padding: 0;
-   margin: 0;
-
+//    margin: 0;
     @media screen and (min-width: $breakpoint-desktop){
         display: flex;
         align-items: center;
         gap: 50px;
     }
-    @extend %list
+    
+
+        @extend %list
 }
+
 
 .contacts__item {
     color:  $primary-text-color;
@@ -22,10 +24,20 @@ text-decoration: none;
     transition: color 250ms $time-distribution-function;
 
     @media screen and (max-width: 767px){
+        display: block;
         font-size: 34px;
         line-height: 1.16;
         justify-content: left;
         margin-bottom: 30px;
+        color: $hover-color;
+    }
+
+    @media screen and (min-width:$breakpoint-tablet) and (max-width: 1199px){
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+     margin-bottom: 10px;
+     font-size: 12px;
     }
 
     &:hover,
@@ -34,7 +46,19 @@ text-decoration: none;
         }
 
 }
+@media screen and (max-width: 767px){
+    .contacts__item .menu{
+display: none;
+    }
+}
 
+
+// @media screen and (max-width: 767px){
+//     .contacts:last-child {
+//                 color: $primary-text-color;
+//                 margin-bottom: 0;
+//             }
+//         }
 // @media screen and (max-width: 767px){
 //     .contacts__item:last-child{
 //        margin-bottom: 0;
@@ -54,6 +78,8 @@ text-decoration: none;
 .envelope {
     margin-right: 10px;
     fill: $primary-text-color;
+fill: currentColor;
+margin-right: 8px;
 
     transition: fill 250ms $time-distribution-function;
     .contacts:hover & {
