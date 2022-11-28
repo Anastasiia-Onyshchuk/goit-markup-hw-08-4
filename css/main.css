@@ -543,6 +543,11 @@ img {
     margin-right: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .header__nav > .contacts {
+    visibility: hidden;
+  }
+}
 .contacts__item:hover .smartphone {
   fill: #2196F3;
 }
