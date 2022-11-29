@@ -509,7 +509,6 @@ img {
         -ms-flex-pack: left;
             justify-content: left;
     margin-bottom: 30px;
-    color: #2196F3;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -546,6 +545,11 @@ img {
 @media screen and (max-width: 767px) {
   .header__nav > .contacts {
     visibility: hidden;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__item.current {
+    color: #2196F3;
   }
 }
 .contacts__item:hover .smartphone {

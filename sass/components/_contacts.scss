@@ -33,8 +33,9 @@ text-decoration: none;
         line-height: 1.16;
         justify-content: left;
         margin-bottom: 30px;
-        color: $hover-color;
+        // color: $hover-color;
     }
+
 
     @media screen and (min-width:$breakpoint-tablet) and (max-width: 1199px){
         display: flex;
@@ -62,6 +63,12 @@ margin-right: 30px;
 @media screen and (max-width: 767px){
     .header__nav> .contacts{
         visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .contacts__item.current{
+        color: $hover-color;
     }
 }
 // @media screen and (max-width: 767px){
