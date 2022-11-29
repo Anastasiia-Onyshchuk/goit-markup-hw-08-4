@@ -134,6 +134,11 @@ text-align: center;
 
 .footer-form {
     margin-top: 60px;
+    display: block;
+    // margin-top: 0;
+    // margin-right: auto;
+    // margin-bottom: 0;
+    // margin-left: auto;
 @media screen and (max-width: 1199px) {
     display: block;
     padding-left: 0;
@@ -202,9 +207,9 @@ margin-bottom: 20px;
 
 
 .form-container__button .button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     gap: 12px;
     padding: 10px 28px;
     position: relative;
@@ -213,10 +218,8 @@ margin-bottom: 20px;
     line-height: 1.875;
     letter-spacing: 0.06em;
     color: $hover-color;
-         margin-left: 125px;
-     margin-right: 125px;
-    // justify-content: center;
-    // align-items: center;
+    //      margin-left: 125px;
+    //  margin-right: 125px;
 
     @media screen and (max-width: 1199px){
         display: block;
