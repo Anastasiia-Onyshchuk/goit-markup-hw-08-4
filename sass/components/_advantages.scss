@@ -1,6 +1,6 @@
 .advantage {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $secondary-bcg-color;
 
     &__title {
@@ -25,6 +25,8 @@
 }
 @media screen and (min-width: $breakpoint-desktop){
     flex-wrap: nowrap;
+        padding-top: 94px;
+    padding-bottom: 94px;
 }
     @extend %list
 }
@@ -70,7 +72,8 @@
 .advantage-list__card {
     background-color: $primary-bcg-color;
     display: flex;
-    width: 450px;
+    // width: 450px;
+    width: auto;
     height: 120px;
     border-radius: 4px;
     justify-content: center;

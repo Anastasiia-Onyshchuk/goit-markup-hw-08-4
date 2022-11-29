@@ -1,5 +1,6 @@
 .menu__container{
     background-color: $secondary-bcg-color;
+   
     min-height: 796px;
     width: 100%;
     // padding: 48px 40px;
@@ -7,6 +8,7 @@
 padding-right: 30px;
 padding-bottom: 55px;
 padding-left: 30px;
+
 
    &.is-open{
     display: block;

@@ -1,20 +1,17 @@
 .footer__container {
-        
-    text-align: center;
-    margin-bottom: 60px;
+
 @media screen and (min-width: $breakpoint-tablet) {
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
     margin-bottom: 60px; 
     flex-wrap: wrap;
+    margin-bottom: 0;
 }
 
     @media screen and (min-width: $breakpoint-desktop) {
     align-items: baseline;
     justify-content: space-between;
     flex-wrap: nowrap;
-
 }
 }
 .footer {
@@ -32,6 +29,7 @@
     letter-spacing: 0.02em;
 text-decoration: none;
     transition: color 250ms $time-distribution-function;
+    margin-bottom: 0;
 
     }
 }
@@ -44,16 +42,27 @@ text-decoration: none;
 
 .footer__navigation {
     margin-bottom: 60px;
+    text-align: center;
+
     @media screen and (min-width: $breakpoint-tablet){
         margin-right: 70px;
-        margin-bottom: 0;  
+        margin-bottom: 0;   
     }
     @media screen and (min-width: $breakpoint-desktop){
         margin-right: 70px;
-text-align: left;
+        text-align: left;
     }
         @extend %list
         
+}
+
+@media screen and (max-width: 1199px){
+    .footer__navigation> .contacts__item{
+text-align: center;
+margin-right: 70px;
+margin-bottom: 0;   
+    }
+
 }
 
 .footer__logo {
@@ -79,8 +88,6 @@ text-align: left;
 .footer__list {
 
     margin-top: 20px;
-      
-
   @extend %list
 }
 
@@ -127,7 +134,7 @@ text-align: left;
 }
 
 .footer-form {
-
+    margin-top: 60px;
 @media screen and (max-width: 1199px) {
     display: block;
     padding-left: 0;
@@ -140,11 +147,12 @@ text-align: left;
 .form-container {
 display: block;
 flex-wrap: wrap;
-padding: 0;
-margin: 0;
+margin-left: 0;
+margin-right: 0;
 
-@media screen and (max-width: 767px) {
-    max-width: 768px;
+
+@media screen and (max-width: 1199px) {
+    max-width: 450px;
 }
     @media screen and (min-width: $breakpoint-desktop) {
         display: flex;
@@ -216,3 +224,5 @@ margin-bottom: 20px;
         margin-left: auto;
     }
 }
+
+

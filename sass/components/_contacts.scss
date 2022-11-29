@@ -60,9 +60,16 @@ margin-right: 30px;
     }
 
 }
+
+@media screen and (min-width: $breakpoint-desktop){
+    .contacts__item :last-child{
+margin-right: 30px;
+    }
+
+}
 @media screen and (max-width: 767px){
     .header__nav> .contacts{
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -71,24 +78,7 @@ margin-right: 30px;
         color: $hover-color;
     }
 }
-// @media screen and (max-width: 767px){
-//     .contacts__item .menu{
-// display: none;
-//     }
-// }
 
-
-// @media screen and (max-width: 767px){
-//     .contacts:last-child {
-//                 color: $primary-text-color;
-//                 margin-bottom: 0;
-//             }
-//         }
-// @media screen and (max-width: 767px){
-//     .contacts__item:last-child{
-//        margin-bottom: 0;
-//     }
-// }
 
 .contacts__item:hover .smartphone {
     fill: $hover-color;
