@@ -19,7 +19,7 @@
     margin-left: auto;
     padding-top: 24px;
     padding-bottom: 25px;
-    justify-content: space-between;
+    // justify-content: space-between;
 
 @media screen and(max-width: $breakpoint-mobile){
     height: 60px;
@@ -31,6 +31,7 @@
 
     margin-top: 0;
     align-items: center;
+    justify-content: space-between;
     flex-grow: 1;
 
 

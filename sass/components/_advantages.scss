@@ -3,6 +3,10 @@
     padding-bottom: 60px;
     background-color: $secondary-bcg-color;
 
+    @media screen and (min-width: $breakpoint-desktop){
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
     &__title {
         @extend %visually-hidden
     }
@@ -25,8 +29,6 @@
 }
 @media screen and (min-width: $breakpoint-desktop){
     flex-wrap: nowrap;
-        padding-top: 94px;
-    padding-bottom: 94px;
 }
     @extend %list
 }

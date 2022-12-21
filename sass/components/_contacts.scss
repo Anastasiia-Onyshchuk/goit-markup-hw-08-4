@@ -9,6 +9,7 @@ display: block;
     @media screen and (min-width: $breakpoint-desktop){
         display: flex;
         align-items: center;
+        margin-left: auto;
         // gap: 50px;
     }
     
