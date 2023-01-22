@@ -1,8 +1,10 @@
 .menu__container{
     background-color: $secondary-bcg-color;
-   
+    overflow: auto;
+//     max-width: 480px;
+// min-height: 100%;
     min-height: 796px;
-    width: 100%;
+    min-width: 100%;
     // padding: 48px 40px;
     padding-top: 55px;
 padding-right: 30px;

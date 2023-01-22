@@ -1,6 +1,15 @@
 .contacts {
 display: block;
    padding: 0;
+gap: 30px;
+   @media  screen and (min-width: $breakpoint-tablet) {
+    [href^="tel"]{
+        margin-bottom: 0;
+        margin-right: 0;
+       }
+   }
+
+  
 //    margin: 0;
 // @media screen and (max-width: 767px) {
 //      visibility: hidden;
@@ -55,12 +64,12 @@ text-decoration: none;
         }
 
 }
-@media screen and (min-width: $breakpoint-desktop){
-    .contacts__item:first-child{
-margin-right: 30px;
-    }
+// @media screen and (min-width: $breakpoint-desktop){
+//     .contacts__item:first-child{
+// margin-right: 30px;
+//     }
 
-}
+// }
 
 @media screen and (min-width: $breakpoint-desktop){
     .contacts__item :last-child{

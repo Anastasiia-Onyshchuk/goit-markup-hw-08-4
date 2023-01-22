@@ -17,6 +17,7 @@
 }
 @media screen and (min-width: $breakpoint-desktop){
     justify-content: space-between;
+    margin-bottom: 0;
 }
   
    
@@ -35,12 +36,14 @@
 margin-left: auto;
 margin-right: auto;
     margin-bottom: 30px;
-    
+
+
 @media screen and (min-width: $breakpoint-tablet){
     width: calc((100% - 60px) /2);
 }
 @media screen and (min-width: $breakpoint-desktop){
     width: calc((100% - 90px) / 4);
+    margin-bottom: 0;
 }
 
     // &:not(:last-child) {
@@ -48,6 +51,7 @@ margin-right: auto;
     //     }
     @extend %list
 }
+
 .team-list__image {
     display: block;
     width: 100%;

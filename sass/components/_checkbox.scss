@@ -16,7 +16,9 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
-
+.checkbox__label>p{
+font-size: 12px;
+}
 .checkbox__input {
     appearance: none;
 
@@ -45,7 +47,7 @@
 
 .checkbox__text {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
