@@ -7,7 +7,7 @@
 
 .checkbox__label {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     bottom: 0;
     right: 0;
@@ -16,6 +16,10 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     gap: 7px;
+
+    // @media screen and (min-width: $breakpoint-desktop) {
+    //     justify-content: baseline; 
+    // }
 }
 .checkbox__label>p{
 font-size: 12px;
