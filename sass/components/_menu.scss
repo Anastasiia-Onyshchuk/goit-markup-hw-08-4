@@ -142,11 +142,10 @@ color: $hover-color;
     margin: 0;
     padding: 0;
     background-color: transparent;
-    cursor: pointer;
+  cursor: pointer;
     border: none;
     border-radius: 50%;
     outline: none;
-top: 10px;
 right: 15px;
 position: absolute;
 color: currentColor;
@@ -156,4 +155,23 @@ color: currentColor;
     .menu-toggle {
       display: none;
     }
+  }
+
+  .menu-toggle2{
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    top: 10px;
+right: 15px;
+position: absolute;
+color: currentColor; 
   }

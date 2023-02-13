@@ -20,9 +20,10 @@
     padding-top: 24px;
     padding-bottom: 25px;
     // justify-content: space-between;
-
+position: relative;
 @media screen and(max-width: $breakpoint-mobile){
     height: 60px;
+
 }
 }
 

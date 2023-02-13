@@ -35,12 +35,12 @@
     color:$hover-color;
     margin-top: 63px;
 }
-@media (min-width: $brakepoint-mobile) {
+@media (min-width: $breakpoint-mobile) {
         .mobile-network__link{
             font-size:18px
         }
     }
-    
+
 .mobile-network__link:hover, .mobile-network__link:focus {
     color: $hover-color;
 }
