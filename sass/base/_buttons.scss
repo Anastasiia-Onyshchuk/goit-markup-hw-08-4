@@ -21,6 +21,7 @@
             background-color: #188CE8;
             border: 0;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
         }
 }
 
@@ -70,8 +71,6 @@ margin: 0 auto;
     background-color: transparent;
     border: none;
     z-index: 2;
-
-
 @media screen and (min-width: $breakpoint-tablet){
     display: none;
 }

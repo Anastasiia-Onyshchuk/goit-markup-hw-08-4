@@ -1,6 +1,6 @@
 .mobile-network {
     display: flex;
-    padding: 0;
+    // padding: 0;
 }
 @media screen and (min-width: $breakpoint-tablet) {
     .mobile-network{
@@ -13,6 +13,11 @@
     align-items: center;
 }
 
+@media screen and (max-width: 320px){
+    .mobile-network{
+        font-size: 12px; 
+    } 
+}
 .mobile-network__link {
     text-decoration: none;
     font-family: inherit;
@@ -21,8 +26,8 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 14px;
     line-height: 1.222;
     letter-spacing: .02em;
     text-align: start;
@@ -30,7 +35,12 @@
     color:$hover-color;
     margin-top: 63px;
 }
-
+@media (min-width: $brakepoint-mobile) {
+        .mobile-network__link{
+            font-size:18px
+        }
+    }
+    
 .mobile-network__link:hover, .mobile-network__link:focus {
     color: $hover-color;
 }

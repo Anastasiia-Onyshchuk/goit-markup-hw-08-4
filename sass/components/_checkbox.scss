@@ -7,14 +7,15 @@
 
 .checkbox__label {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     bottom: 0;
     right: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    gap: 7px;
 }
 .checkbox__label>p{
 font-size: 12px;
@@ -36,7 +37,9 @@ font-size: 12px;
 
 .checkbox__icon {
     display: inline-block;
-    margin-right: 8px;
+    flex-shrink: 0;
+    // margin-right: 8px;
+    cursor: pointer;
     border-radius: 4px;
     border: 2px solid $secondary-text-color;
     width: 16px;

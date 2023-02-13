@@ -71,7 +71,7 @@ gap: 30px;
 
 .clients-list__icon {
     fill: #AFB1B8;
-    transition: fill 5050ms $time-distribution-function;
+    transition: fill 250ms $time-distribution-function;
 
     .clients-list__link:hover & {
             fill: $hover-color;
